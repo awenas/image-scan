@@ -1,6 +1,5 @@
 box: ubuntu
 
-
 build:
   docker: true
   services:
@@ -16,7 +15,7 @@ build:
     code: |
       apt-get update
       apt-get install -y curl docker.io
-      https_proxy=http://www-proxy-hqdc.us.oracle.com:80 curl -L -O https://github.com/arminc/clair-scanner/releases/download/v8/clair-scanner_linux_amd64
+      curl -L -O https://github.com/arminc/clair-scanner/releases/download/v8/clair-scanner_linux_amd64
       mv clair-scanner_linux_amd64 clair-scanner
       chmod +x clair-scanner
   - script:
