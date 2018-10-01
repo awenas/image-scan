@@ -1,6 +1,6 @@
 box: ubuntu
+
 build:
-  box: alphine
   docker: true
   services:
   - id: arminc/clair-db
