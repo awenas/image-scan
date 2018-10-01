@@ -1,5 +1,4 @@
 box: ubuntu
-
 build:
   box: alphine
   docker: true
