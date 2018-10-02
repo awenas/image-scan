@@ -1,6 +1,5 @@
 box: ubuntu
 
-
 build:
   docker: true
   services:
@@ -23,4 +22,4 @@ build:
     name: Scan an image
     code: |
       docker pull alpine:3.5
-      ./clair-scanner --clair="http://localhost:6060" alpine:3.5
+      ./clair-scanner --clair="http://clair:6060" alpine:3.5
