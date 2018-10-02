@@ -5,7 +5,7 @@ build:
   services:
   - id: arminc/clair-db
     tag: 2017-09-18
-    name: db
+    name: postgres
   - id: arminc/clair-local-scan
     tag: v2.0.1
     name: clair
