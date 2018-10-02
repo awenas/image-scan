@@ -21,5 +21,5 @@ build:
   - script:
     name: Scan an image
     code: |
-      docker pull alpine:3.5
-      ./clair-scanner --clair="http://clair:6060" alpine:3.5
+      docker pull alpine
+      ./clair-scanner --clair="http://clair:6060" alpine
