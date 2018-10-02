@@ -22,4 +22,4 @@ build:
     name: Scan an image
     code: |
       docker pull alpine
-      ./clair-scanner --clair="http://clair:6060" alpine
+      ./clair-scanner --ip 127.0.0.1 --clair="http://clair:6060" alpine
